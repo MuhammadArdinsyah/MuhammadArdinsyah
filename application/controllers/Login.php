@@ -19,9 +19,7 @@ class Login extends CI_Controller {
 					redirect(site_url('Welcome'));
 				}			
 				else{
-					$this->load->library('session');
-					$this->session->unset_userdata('Login');
-					redirect(site_url('Login'));
+					echo "Username atau Password Salah";
 				}
 			}
 
